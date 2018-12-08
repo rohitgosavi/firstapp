@@ -1,0 +1,42 @@
+{
+    "name": "Customer",
+    "fields": [
+        {
+            "fieldName": "customerId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "customerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "customerAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "customerEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "customerContact",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "branchId",
+            "otherEntityName": "branch",
+            "otherEntityRelationshipName": "customer"
+        }
+    ],
+    "changelogDate": "20181208101138",
+    "entityTableName": "customer",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
