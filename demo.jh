@@ -1,0 +1,17 @@
+entity Branch {
+	branchId Integer 
+	branchName String
+}
+
+entity Customer {
+	customerId Integer
+	customerName String
+    customerAddress String
+    customerEmail String
+    customerContact String
+}
+
+
+relationship OneToMany {
+	Customer{branchId} to Branch
+}
